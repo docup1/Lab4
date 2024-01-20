@@ -4,7 +4,17 @@ import java.util.Objects;
 
 public abstract class Obj{
 
-    {Counter.personCount++;}
+    public class Counter {
+        public static int personCount = 0;
+        public static int getPersonCount() {
+            return personCount;
+        }
+    }
+
+
+    {
+        Obj.Counter.personCount++;
+    }
     String name;
     public Obj(String name){
 

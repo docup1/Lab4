@@ -25,7 +25,7 @@ public class Main {
 
             fluff.BowUp();
 
-            if (Counter.getPersonCount() <= 0) throw new StoryIsNotReadyException("В история нет персонажей!");
+            if (Obj.Counter.getPersonCount() <= 0) throw new StoryIsNotReadyException("В история нет персонажей!");
 
         }
         catch (StoryIsNotReadyException exception){
