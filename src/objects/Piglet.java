@@ -19,6 +19,6 @@ public class Piglet extends Obj implements BowDown, Push {
     }
     public void push() {
 
-        System.out.println("Пятачок толкает кресло");
+        System.out.println(this.name + " толкает кресло");
     }
 }

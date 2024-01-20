@@ -14,9 +14,11 @@ public class Fluff extends Obj implements  Push {
                 "name='" + name + '\'' +
                 '}';
     }
+    public String sayName() {
+        return this.name;
+    }
     public void push() {
-
-        System.out.println("Пух толкает кресло");
+        System.out.println(this.name + " толкает кресло");
     }
     public void BowUp() {
 

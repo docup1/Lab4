@@ -15,7 +15,7 @@ public abstract class Obj{
     {
         Obj.Counter.personCount++;
     }
-    String name;
+    public String name;
     public Obj(String name){
 
         this.name = name;

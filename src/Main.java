@@ -11,7 +11,11 @@ public class Main {
             Mailbox box = new Mailbox("почтовыЙ ящик");
             box.setMaterial();
 
-            Piglet piglet = new Piglet("Пяточек");
+            Piglet piglet = new Piglet("Пяточек"){
+                public void push() {
+                    System.out.println(this.name + " толкает кресло одновременно с " + fluff.sayName());
+                }
+            };
 
             piglet.bowDown();
 
@@ -22,6 +26,8 @@ public class Main {
 
             fluff.push();
             piglet.push();
+
+
 
             fluff.BowUp();
 
