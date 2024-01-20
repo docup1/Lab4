@@ -7,7 +7,6 @@ public class Owl extends Obj implements FlyDown, Admire {
     public Owl(String name) {
         super(name);
     }
-
     @Override
     public String toString() {
         return "Owl{" +

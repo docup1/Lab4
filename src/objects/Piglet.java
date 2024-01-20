@@ -1,12 +1,12 @@
 package objects;
 
 import interfases.BowDown;
+import interfases.Push;
 
-public class Piglet extends Obj implements BowDown {
+public class Piglet extends Obj implements BowDown, Push {
     public Piglet(String name) {
         super(name);
     }
-
     @Override
     public String toString() {
         return "Piglet{" +
@@ -14,6 +14,11 @@ public class Piglet extends Obj implements BowDown {
                 '}';
     }
     public void bowDown() {
+
         System.out.println("Пятачок склонился над ним");
+    }
+    public void push() {
+
+        System.out.println("Пятачок толкает кресло");
     }
 }

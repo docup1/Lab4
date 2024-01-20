@@ -4,9 +4,19 @@ import java.util.Objects;
 
 public abstract class Obj{
 
+    {Counter.personCount++;}
     String name;
     public Obj(String name){
+
         this.name = name;
+        validateName();
+    }
+
+    private void validateName() throws IllegalArgumentException {
+        char[] nameInChars = name.toCharArray();
+        for (char c : nameInChars) {
+            if (Character.isDigit(c)) throw new IllegalArgumentException("Ошибка: в названии содержатся цифры!");
+        }
     }
 
     @Override
